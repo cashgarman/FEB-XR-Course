@@ -27,6 +27,8 @@ public class ObjectSpawner : MonoBehaviour
 
     private void SpawnObject()
     {
+        Debug.Log($"Spawning a {objectPrefab.name}");
+
         Instantiate(objectPrefab, transform.position, Quaternion.identity);
     }
 }
